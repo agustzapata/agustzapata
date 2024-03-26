@@ -1,0 +1,161 @@
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a:visited{
+    color: rgb(97, 38, 21);
+}
+a:active{
+    background-color: rgb(161, 45, 13);
+}
+
+/*estilos index*/
+
+.titulo-index{
+    text-align: center;
+    color: rgb(66, 66, 73);
+    margin-top: 40px;
+}
+
+.bloque-imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-inicio{
+    width: 50%;
+}
+
+.pie-foto{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*estilos about*/
+
+.titulo-about{
+    text-align: center;
+    color: rgb(66, 66, 73);
+    margin-top: 40px;
+}
+
+.texto-about{
+    text-align: center;
+}
+
+main div img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+}
+
+.imagen-ab1{
+    display: flex;
+    justify-content: center;
+}
+.imagen-ab2{
+    display: flex;
+    justify-content: center;
+}
+
+.main-about, .imagen-ab1 {
+    margin: 10px;
+}
+
+/*estilos gallery*/
+
+.titulo-gallery{
+    text-align: center;
+    color: rgb(66, 66, 73);
+    margin-top: 40px;
+
+}
+
+.subtitle-gallery{
+    text-align: center;
+    font-size: medium;
+
+}
+
+.contenedor-galeria {
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(3,50%);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.contenedor-galeria .img-uno, .contenedor-galeria .img-dos, .contenedor-galeria .img-tres {
+    width: 100%;
+    height: 100%;
+    grid-row: span 50;
+}
+
+.contenedor-galeria .img-cuatro, .contenedor-galeria .img-cinco{
+    width: 100%;
+    height: 100%;
+    grid-row: span 50;   
+}
+
+
+/*estilos shop*/
+
+.titulo-shop{
+    text-align: center;
+    color: rgb(66, 66, 73);
+    margin-top: 40px;  
+}
+
+.s-shop{
+    color: brown;
+    text-align: center;
+}
+
+.parrafo-shop{
+    text-align: center;
+}
+
+.formulario-shop{
+    display: flex;
+    justify-content: center;
+}
+
+/*estilos contacto*/
+
+.titulo-contacto{
+    text-align: center;
+    color: rgb(66, 66, 73);
+    margin-top: 40px;  
+}
+
+.subtitulo-contacto{
+    text-align: center;
+    font-size: medium; 
+}
+
+.mail-personal{
+    text-align: center;
+    font-size: medium; 
+    color: rgb(206, 56, 56);
+}
+
+.formulario-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+/* mq de tablet*/
+
+@media screen and (min-width: 600px) {
+    .contenedor-galeria {
+        height: 65vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+    .contenedor-galeria .img-cuatro {
+        grid-column: span 2;
+    }
+}
